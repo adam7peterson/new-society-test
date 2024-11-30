@@ -9,18 +9,35 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f0f2f5;
+        }
+        nav {
+            background-color: #1a73e8;
+            padding: 1rem;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             background-color: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2 {
             color: #1a73e8;
             margin-bottom: 20px;
         }
@@ -34,16 +51,63 @@
             border-radius: 5px;
             margin: 20px 0;
         }
+        .mission-section {
+            margin: 40px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#values">Values</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Welcome to New Society</h1>
-        <p>This is a simple webpage that demonstrates basic HTML and CSS styling.</p>
-        <div class="highlight">
-            <p>We're building something amazing here. Stay tuned for more updates!</p>
-        </div>
-        <p>Feel free to explore and contribute to our project.</p>
+        <section id="home">
+            <h1>Welcome to New Society</h1>
+            <p>This is a simple webpage that demonstrates basic HTML and CSS styling.</p>
+            <div class="highlight">
+                <p>We're building something amazing here. Stay tuned for more updates!</p>
+            </div>
+        </section>
+
+        <section id="mission" class="mission-section">
+            <h2>Our Mission</h2>
+            <p>We strive to create a better future through innovation and collaboration. Our goal is to bring people together and make a positive impact on society.</p>
+        </section>
+
+        <section id="values" class="mission-section">
+            <h2>Our Values</h2>
+            <ul>
+                <li>Innovation</li>
+                <li>Collaboration</li>
+                <li>Integrity</li>
+                <li>Sustainability</li>
+            </ul>
+        </section>
     </div>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: contact@newsociety.example.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Innovation Street, Tech City, TC 12345</p>
+        </div>
+    </footer>
 </body>
 </html>
